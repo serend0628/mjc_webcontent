@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한정민 자기소개</title>
+</head>
+<style>
+    #timetable table {
+        border: 1px solid black;
+    }
+
+    #timetable th,
+    #timetable td {
+        border: 1px solid black;
+    }
+
+
+    .hobby_wrap ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: unset;
+    }
+
+    .hobby_wrap li {
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .hobby_wrap li:hover .hide_txt {
+        opacity: 1;
+    }
+
+    .hobby_wrap img {
+        height: 200px;
+    }
+    .hide_txt {
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        opacity: 0;
+        transition: .5s;
+    }
+</style>
+
+<body>
+    <div>
+        <section id="about">
+            <h2>About me</h2>
+            <hr>
+            <p>안녕하세요? 제 이름은 한정민입니다. 올해 대학교를 입학한 새내기입니다.</p>
+            <p>다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요 ~</p>
+        </section>
+
+        <section>
+            <h3>목차</h3>
+            <ul>
+                <li><a href="#interest">관심분야</a></li>
+                <li><a href="#hobby">취미활동</a></li>
+                <li><a href="#timetable">강의시간표</a></li>
+            </ul>
+        </section>
+
+        <section id="interest">
+            <h2>관심 분야</h2>
+            <hr>
+            <ul>
+                <li>인공지능(AI)
+                    <ul>
+                        <li>머신러닝(Machine Learning)</li>
+                        <li>자연어 처리(Natural Language Processing, NLP)</li>
+                        <li>컴퓨터 비전(Computer Vision)</li>
+                        <li>로보틱스(Robotics)</li>
+                    </ul>
+                </li>
+                <li>사물인터넷(IoT)
+                    <ul>
+                        <li>사물(Things): 센서, 액추에이터 등 통신 기능을 갖춘 다양한 기기</li>
+                        <li>센서(Sensors): 온도, 습도, 빛, 움직임 등 환경 정보를 감지하는 장치</li>
+                        <li>네트워크(Network): 사물과 인터넷을 연결하는 통신망 (Wi-Fi, Bluetooth, 5G 등)</li>
+                        <li>플랫폼(Platform): 수집된 데이터를 저장, 분석, 처리하는 소프트웨어 시스템</li>
+                    </ul>
+                </li>
+                <li>양자컴퓨터
+                    <ul>
+                        <li>큐비트 (Qubit)</li>
+                        <li>중첩 (Superposition)</li>
+                        <li>얽힘 (Entanglement)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="hobby">
+            <h2>취미 활동</h2>
+            <hr>
+            <div class="hobby_wrap">
+                <ul>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUh4V6jbLqEMl8J8PWpZmByVyos1tgx8WaQ&s"
+                            alt="riding">
+                        <p class="hide_txt">riding</p>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmc8igR_9BD_DuibifwPyWewTDthMNbci_Q&s"
+                            alt="running">
+                        <p class="hide_txt">running</p>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOG1rRG88jt8gJNUPvg4E7itUv0pzzAplr-g&s"
+                            alt="reading">
+                        <p class="hide_txt">reading</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="timetable">
+            <h2>강의 시간표(2025년 1학기)</h2>
+            <hr>
+            <table>
+                <tr>
+                    <th scope="col">구분</th>
+                    <th scope="col">월</th>
+                    <th scope="col">화</th>
+                    <th scope="col">수</th>
+                    <th scope="col">목</th>
+                    <th scope="col">금</th>
+                </tr>
+                <tr>
+                    <td>09</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td></td>
+                    <td rowspan="3">인터넷 콘텐츠(103/공학615)</td>
+                    <td></td>
+                    <td rowspan="3">인터넷 콘텐츠(101/공학615)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+</body>
+
+</html>
