@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .hobby-container {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .hobby-container li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobby-container img {
+        height: 200px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>About me</h1>
+        <p>안녕하세요? 제 이름은 한정민입니다. 오늘 대학교를 입학한 새내기입니다.<br>
+            다양한 관심분야와 취미활동을 하고 있습니다. 즐거운 하루 되세요~</p>
+    </header>
+
+    <nav>
+        <h2>목차</h2>
+        <ul>
+            <li><a href="#interests">관심분야</a></li>
+            <li><a href="#hobbies">취미활동</a></li>
+            <li><a href="#schedule">강의시간표</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article id="interests">
+            <h2>관심분야</h2>
+            <ul>
+                <li>인공지능
+                    <ul>
+                        <li>머신러닝(Machine Learning)</li>
+                        <li>자연어 처리(Natural Language Processing, NLP)</li>
+                        <li>컴퓨터 비전(Computer Vision)</li>
+                        <li>로보틱스(Robotics)</li>
+                    </ul>
+                </li>
+                <li>사물인터넷(IoT)
+                    <ul>
+                        <li>사물(Things): 센서, 액추에이터 등 통신 기능을 갖춘 다양한 기기</li>
+                        <li>센서(Sensors): 온도, 습도, 빛, 움직임 등 환경 정보를 감지하는 장치</li>
+                        <li>네트워크(Network): 사물과 블루투스가 연결된 통신망(Wi-Fi, Bluetooth, 5G 등)</li>
+                        <li>플랫폼(Platform): 수집된 데이터 저장, 분석, 처리 소프트웨어 시스템</li>
+                    </ul>
+                </li>
+                <li>양자컴퓨터
+                    <ul>
+                        <li>큐비트(Qubit)</li>
+                        <li>중첩(Superposition)</li>
+                        <li>얽힘(Entanglement)</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+
+        <hr>
+
+        <article id="hobbies">
+            <h2>취미활동</h2>
+            <ul class="hobby-container">
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUh4V6jbLqEMl8J8PWpZmByVyos1tgx8WaQ&s"
+                        alt="ridding">
+                    ridding
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmc8igR_9BD_DuibifwPyWewTDthMNbci_Q&s"
+                        alt="running">
+                    running
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOG1rRG88jt8gJNUPvg4E7itUv0pzzAplr-g&s"
+                        alt="reading">
+                    reading
+                </li>
+            </ul>
+
+        </article>
+
+        <hr>
+
+        <article id="schedule" style="display: flex;">
+            <div>
+                <div>
+                    <h2>강의시간표(2026년 1학기)</h2>
+                    <table border="1">
+                        <tr>
+                            <th>구분</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                        </tr>
+                        <tr>
+                            <td>09</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td rowspan="3" class="subject">인터넷<br>컨텐츠<br>(101반)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td></td>
+                            <td rowspan="3" class="subject">인터넷<br>컨텐츠<br>(102반)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div> -->
+        </article>
+    </section>
+
+    <footer>
+        <p><a href="./survey3.html">설문조사</a></p>
+        <p>Copyright 2026 by MYONGJI COLLEGE</p>
+    </footer>
+
+</body>
+
+</html>
