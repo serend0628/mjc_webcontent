@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+</head>
+<style>
+    body {
+        background-color: aliceblue;
+        font-family: 'Malgun Gothic', sans-serif;
+        color: #333;
+        margin: unset;
+    }
+
+    header {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: brown;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    h2 {
+        color: blue;
+        text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.2);
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .fontH {
+        font-family: "휴먼편지체", "Comic Sans MS", cursive, sans-serif;
+        font-size: 1em;
+        text-indent: 1em;
+        line-height: 1.6;
+    }
+
+    .toc ul {
+        border: 1px solid #ccc;
+    }
+    .toc a {
+        text-decoration: none;
+        color: #333;
+    }
+    .toc a:hover {
+        color: blue;
+    }
+
+    .interests h2 {
+        padding: 0 0 15px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .interests ul {
+        list-style-type: disc;
+        padding-left: 50px;
+    }
+    .interests ul ul {
+        list-style-type: circle;
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+    .interests li {
+        margin-bottom: 8px;
+    }
+
+
+    .hobby-container {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+    }
+    .hobby-container li {
+        display: flex;
+        flex-direction: column;
+    }
+    .hobby-container img {
+        width: calc(85vw / 3);
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    #timetable table {
+        width: 85%;
+        border-collapse: collapse;
+        background-color: #fff;
+        font-weight: bold;
+    }
+    #timetable th,
+    #timetable td {
+        border: 1px solid #ccc;
+        padding: 12px;
+        font-size: 0.95em;
+        text-align: center;
+    }
+    #timetable th {
+        background-color: #f2f2f2;
+    }
+    .time-col {
+        background-color: #fffacd;
+        width: 10%;
+    }
+
+    .class-pink {
+        background-color: #ffe4e1;
+    }
+    .class-blue {
+        background-color: #e0f7fa;
+    }
+
+    footer {
+        background-color: orange;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 40px;
+        color: #333;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    footer .survey {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>About me</h1>
+        <p>안녕하세요? 제 이름은 홍길동입니다. 올해 대학교를 입학한 새내기입니다. 다양한 관심분야와 취미활동을 하고 있습니다. 즐거운 하루 되세요~</p>
+    </header>
+
+    <main>
+        <section class="toc">
+            <h2>목차</h2>
+            <ul>
+                <li><a href="#interests">관심분야</a></li>
+                <li><a href="#hobbies">취미활동</a></li>
+                <li><a href="#timetable">강의시간표</a></li>
+            </ul>
+        </section>
+
+        <section id="interests" class="interests">
+            <h2>관심분야</h2>
+            <ul>
+                <li><strong>인공지능</strong>
+                    <ul>
+                        <li>머신러닝(Machine Learning)</li>
+                        <li>자연어 처리(Natural Language Processing, NLP)</li>
+                        <li>컴퓨터 비전(Computer Vision)</li>
+                        <li>로보틱스(Robotics)</li>
+                    </ul>
+                </li>
+                <li><strong>사물인터넷(IoT)</strong>
+                    <ul>
+                        <li>사물(Things): 센서, 액추에이터 등 통신 기능을 갖춘 다양한 기기</li>
+                        <li>센서(Sensors): 온도, 습도, 빛, 움직임 등 환경 정보를 감지하는 장치</li>
+                        <li>네트워크(Network): 사물과 블루투스가 연결된 통신망(Wi-Fi, Bluetooth, 5G 등)</li>
+                        <li>플랫폼(Platform): 수집된 데이터 저장, 분석, 처리 소프트웨어 시스템</li>
+                    </ul>
+                </li>
+                <li><strong>양자컴퓨터</strong>
+                    <ul>
+                        <li>큐비트(Qubit)</li>
+                        <li>중첩(Superposition)</li>
+                        <li>얽힘(Entanglement)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>취미활동</h2>
+            <ul class="hobby-container">
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUh4V6jbLqEMl8J8PWpZmByVyos1tgx8WaQ&s"
+                        alt="ridding">
+                    ridding
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmc8igR_9BD_DuibifwPyWewTDthMNbci_Q&s"
+                        alt="running">
+                    running
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOG1rRG88jt8gJNUPvg4E7itUv0pzzAplr-g&s"
+                        alt="reading">
+                    reading
+                </li>
+            </ul>
+
+        </section>
+
+        <section id="timetable">
+            <h2>강의시간표(2026년 1학기)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-col">09</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">10</td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="3" class="class-pink">인터넷<br>컨텐츠<br>(101반)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">13</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">14</td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="3" class="class-blue">인터넷<br>컨텐츠<br>(102반)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">16</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">17</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="fontH">
+        <a class="survey" href="survey4.html" target="_blank">설문조사</a>
+        <address>Copyright 2026 by MYONGJI COLLEGE</address>
+    </footer>
+
+</body>
+
+</html>
